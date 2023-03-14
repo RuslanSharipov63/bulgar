@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: left;
+    max-width: 15vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.answer {
+    color: red;
+    font-weight: 600;
+    text-align: left;
+    padding: 4%;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 4%;
+    max-width: 15vw;
+    box-sizing: border-box;
+    font-weight: 600;
+    color: SteelBlue;
+}
