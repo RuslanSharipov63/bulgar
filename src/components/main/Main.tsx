@@ -1,8 +1,10 @@
 import { SetStateAction, useState } from 'react';
 import styles from './Main.module.css';
 import ButtonContainer from '../button/ButtonContainer';
+import questionType from '../../types/Types';
 
-const Main = () => {
+
+const Main: React.FC<questionType> = ({ id, question, answer1, answer2, answer3 }) => {
 
     const [value, setValue] = useState('0');
 
@@ -14,35 +16,34 @@ const Main = () => {
             };
         }) => {
         setValue(e.target.value);
-        console.log(e.target.name)
     }
 
 
     return (
         <div className={styles.container}>
-            <p className={styles.answer}>1. Основным занятием волжских булгар в XII-XIII вв. было:</p>
+            <p className={styles.question}>{id}. {question}</p>
             <div className={styles.wrapper}>
-                <p>охота</p>
+                <p className={styles.answer}>{answer1}</p>
                 <input type="radio"
-                    name="охота"
+                    name={answer1}
                     value="1"
                     checked={value == '1' ? true : false}
                     onChange={chengeValue}
                 />
             </div>
             <div className={styles.wrapper}>
-                <p>земледелие</p>
+                <p className={styles.answer}>{answer2}</p>
                 <input type="radio"
-                    name="земледелие"
+                    name={answer2}
                     value="2"
                     checked={value == '2' ? true : false}
                     onChange={chengeValue}
                 />
             </div>
             <div className={styles.wrapper}>
-                <p>рыболовство</p>
+                <p className={styles.answer}>{answer3}</p>
                 <input type="radio"
-                    name="рыболовство"
+                    name={answer3}
                     value="3"
                     checked={value == '3' ? true : false}
                     onChange={chengeValue}
