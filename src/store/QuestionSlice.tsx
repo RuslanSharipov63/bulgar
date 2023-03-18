@@ -15,11 +15,24 @@ export const QuestionSlice = createSlice({
     name: '@question',
     initialState,
     reducers: {
-
+        toggleleaveForLater(state, action: PayloadAction<number | undefined>) {
+            state.data.map(item => {
+                if (item.id === action.payload) {
+                    item.leaveForLater = !item.leaveForLater;
+                }
+            })
+        },
+        newAnswer(state, action: PayloadAction<{ id: number, name: string }>) {
+            state.data.find(item => {
+                if (item.id === action.payload.id) {
+                    item.answeruser = action.payload.name
+                }
+            })
+        }
     },
 })
 
 
-/* export const { } = QuestionSlice.actions */
+export const { toggleleaveForLater, newAnswer } = QuestionSlice.actions;
 
 export default QuestionSlice.reducer
