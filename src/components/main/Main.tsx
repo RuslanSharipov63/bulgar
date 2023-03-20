@@ -1,12 +1,13 @@
-import { SetStateAction, useState } from 'react';
+import { SetStateAction } from 'react';
 import styles from './Main.module.css';
 import ButtonContainer from '../button/ButtonContainer';
 import { typeForMain } from '../../types/Types';
+import { useAppDispatch } from '../../hook';
+import { setValue } from '../../store/QuestionSlice';
 
+const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, leaveForLater, value, addAnswerUser, }) => {
+    const dispatch = useAppDispatch();
 
-const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, leaveForLater,  addAnswerUser, }) => {
-   
-    const [value, setValue] = useState('0');
 
 
     const chengeValue = (e:
@@ -16,10 +17,8 @@ const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, 
                 name: string
             };
         }) => {
-
-         setValue(e.target.value);
-   
-
+        let value = e.target.value
+        dispatch(setValue({ id, value }))
         let content = {
             id: id,
             name: e.target.name,
