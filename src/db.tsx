@@ -10,6 +10,7 @@ let db: questionType[] = [
         correctanswer: 'земледелие',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ let db: questionType[] = [
         correctanswer: '100 тыс. лет назад',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ let db: questionType[] = [
         correctanswer: 'эмир',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 4,
@@ -40,6 +43,7 @@ let db: questionType[] = [
         correctanswer: 'гуннов',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 5,
@@ -50,6 +54,7 @@ let db: questionType[] = [
         correctanswer: '922 г.',
         answeruser: null,
         leaveForLater: false,
+       
     },
     {
         id: 6,
@@ -60,6 +65,7 @@ let db: questionType[] = [
         correctanswer: 'в 1230 г.',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 7,
@@ -70,6 +76,7 @@ let db: questionType[] = [
         correctanswer: '1236 г.',
         answeruser: null,
         leaveForLater: false,
+       
     },
     {
         id: 8,
@@ -80,6 +87,7 @@ let db: questionType[] = [
         correctanswer: 'в урочище «Красная глинка» Тетюшского района',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 9,
@@ -90,6 +98,7 @@ let db: questionType[] = [
         correctanswer: 'полукочевой образ жизни',
         answeruser: null,
         leaveForLater: false,
+      
     },
     {
         id: 10,
@@ -100,6 +109,7 @@ let db: questionType[] = [
         correctanswer: 'финно — угорские племена',
         answeruser: null,
         leaveForLater: false,
+       
     },
     {
         id: 11,
@@ -110,6 +120,7 @@ let db: questionType[] = [
         correctanswer: 'в X веке',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 12,
@@ -120,6 +131,7 @@ let db: questionType[] = [
         correctanswer: 'арабский географ Ибн Русте',
         answeruser: null,
         leaveForLater: false,
+      
     },
     {
         id: 13,
@@ -130,6 +142,7 @@ let db: questionType[] = [
         correctanswer: 'мектебе',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 14,
@@ -140,6 +153,7 @@ let db: questionType[] = [
         correctanswer: 'верно',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 15,
@@ -150,6 +164,7 @@ let db: questionType[] = [
         correctanswer: 'Хазарскому Каганату',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 16,
@@ -160,6 +175,7 @@ let db: questionType[] = [
         correctanswer: 'не верно',
         answeruser: null,
         leaveForLater: false,
+       
     },
     {
         id: 17,
@@ -169,6 +185,7 @@ let db: questionType[] = [
         correctanswer: 'верно',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 18,
@@ -179,6 +196,7 @@ let db: questionType[] = [
         correctanswer: 'в 985 г.',
         answeruser: null,
         leaveForLater: false,
+      
     },
     {
         id: 19,
@@ -189,6 +207,7 @@ let db: questionType[] = [
         correctanswer: 'севера (финно — угорскими племенами)',
         answeruser: null,
         leaveForLater: false,
+        
     },
     {
         id: 20,
@@ -199,6 +218,7 @@ let db: questionType[] = [
         correctanswer: 'Кашан',
         answeruser: null,
         leaveForLater: false,
+       
     },
     {
         id: 21,
@@ -209,6 +229,7 @@ let db: questionType[] = [
         correctanswer: 'Болгара',
         answeruser: null,
         leaveForLater: false,
+     
     },
     {
         id: 22,
@@ -219,6 +240,7 @@ let db: questionType[] = [
         correctanswer: 'Якуб ибн Нугман',
         answeruser: null,
         leaveForLater: false,
+    
     },
 ]
 

@@ -28,11 +28,12 @@ export const QuestionSlice = createSlice({
                     item.answeruser = action.payload.name
                 }
             })
-        }
+        },
+
     },
 })
 
 
-export const { toggleleaveForLater, newAnswer } = QuestionSlice.actions;
+export const { toggleleaveForLater, newAnswer, } = QuestionSlice.actions;
 
 export default QuestionSlice.reducer

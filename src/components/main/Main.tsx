@@ -3,10 +3,11 @@ import styles from './Main.module.css';
 import ButtonContainer from '../button/ButtonContainer';
 import { typeForMain } from '../../types/Types';
 
-const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, leaveForLater, addAnswerUser }) => {
 
-
+const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, leaveForLater,  addAnswerUser, }) => {
+   
     const [value, setValue] = useState('0');
+
 
     const chengeValue = (e:
         {
@@ -15,7 +16,10 @@ const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, 
                 name: string
             };
         }) => {
-        setValue(e.target.value);
+
+         setValue(e.target.value);
+   
+
         let content = {
             id: id,
             name: e.target.name,

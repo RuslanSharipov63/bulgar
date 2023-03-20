@@ -7,6 +7,7 @@ interface questionType {
     correctanswer: string,
     answeruser: null | string,
     leaveForLater: boolean,
+    
 }
 
 export interface initialStateType {

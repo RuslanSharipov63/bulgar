@@ -18,8 +18,6 @@ const MainContainer = () => {
             dispatch(toggleleaveForLater(contentArr.id))
             return;
         }
-
-
     }
     return (
         <div className={styles.bigcontainer}>
