@@ -25,6 +25,7 @@ export interface btnTypes {
     text: string | null
     answerLater?: () => void
     resultFunc?: () => void
+    detailedResult?: () => void
 }
 
 export interface typeForMain extends questionType {

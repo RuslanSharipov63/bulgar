@@ -180,9 +180,10 @@ let db: questionType[] = [
     },
     {
         id: 17,
-        question: 'Государство Волжская Булгария возникло в 9 10 веках',
+        question: 'Государство Волжская Булгария возникло в 9-10 веках',
         answer1: 'верно',
         answer2: 'не верно',
+        answer3: 'в других веках',
         correctanswer: 'верно',
         answeruser: '',
         leaveForLater: false,

@@ -1,14 +1,14 @@
 import styles from './Button.module.css';
 import { btnTypes } from '../../types/Types';
 
-const Button: React.FC<btnTypes> = ({ text, answerLater, resultFunc }) => {
+const Buttonone: React.FC<btnTypes> = ({ text, detailedResult }) => {
 
 
 
     return (
         <button
             className={`${styles.custombtn} ${styles.btn10}`}
-            onClick={text === 'Число правильных ответов' ? resultFunc : answerLater}
+            onClick={detailedResult}
         >
             {text}
         </button >
@@ -16,4 +16,4 @@ const Button: React.FC<btnTypes> = ({ text, answerLater, resultFunc }) => {
     );
 }
 
-export default Button;
+export default Buttonone;

@@ -21,6 +21,7 @@ export const QuestionSlice = createSlice({
             state.data.map(item => {
                 if (item.id === action.payload) {
                     item.leaveForLater = !item.leaveForLater;
+                    item.answeruser = '';
                 }
             })
         },
@@ -39,11 +40,10 @@ export const QuestionSlice = createSlice({
             })
         },
         setResult(state) {
-            let counter = 0;
+            state.result = 0;
             state.data.map(item => {
                 if (item.answeruser === item.correctanswer) {
-                    counter++
-                    state.result = counter;
+                    state.result++;
                 }
             })
         }
