@@ -41,14 +41,16 @@ const MainContainer = () => {
             <p className={styles.parag}>
                 Количество вопросов {datatest.length}. Правильных ответов: {result}
             </p>
-            <ButtonContainer
-                text={'Число правильных ответов'}
-                resultFunc={resultFunc}
-            />
-            <Buttonone 
-            text={'Посмотреть подробный результат'}
-            detailedResult={detailedResult}
-            />
+            <div className={styles.forBtn}>
+                <ButtonContainer
+                    text={'Число правильных ответов'}
+                    resultFunc={resultFunc}
+                />
+                <Buttonone
+                    text={'Посмотреть подробный результат'}
+                    detailedResult={detailedResult}
+                />
+            </div>
             <div className={styles.bigcontainer}>
                 {datatest.map((question: questionType) => (
                     <Main

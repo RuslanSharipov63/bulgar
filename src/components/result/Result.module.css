@@ -4,9 +4,9 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    width: 99vw;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
+    max-width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
 }
 
 .container {
@@ -14,14 +14,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    width: 30vw;
+    max-width: 30vw;
     border: 1px solid blue;
     margin: 10px;
     padding: 1%;
     box-sizing: border-box;
     border-radius: 5px;
-    
+
 }
+
 .paragQuestion {
     display: flex;
     flex-direction: row;
@@ -35,15 +36,16 @@
     font-weight: 700;
 }
 
-.parag {
+.correctanswer,
+.answeruser {
     display: flex;
     flex-direction: row;
     justify-content: baseline;
     align-items: top;
     text-align: left;
-    height: 10vh;
+    height: 15vh;
     margin: 20px;
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
 }
 
 .answeruser {
@@ -55,4 +57,8 @@
 .correctanswer {
     color: green;
     font-weight: 500;
+}
+
+.redirectP {
+    text-decoration: none;
 }

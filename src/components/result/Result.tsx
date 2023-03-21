@@ -7,21 +7,13 @@ const Result: React.FC<questionType> = ({ id, question, answeruser, correctanswe
             <p className={styles.paragQuestion}>
                 {id}. {question}
             </p>
-            <p className={styles.parag}>
-                <p>Ваш ответ:</p>
-                <p>
-                    <span className={styles.answeruser}> {answeruser === '' ? 'вы не ответили на вопрос' : answeruser}</span>
-                </p>
+            <p className={styles.answeruser}>
+                Ваш ответ:&nbsp;&nbsp;{answeruser === '' ? 'вы не ответили на вопрос' : answeruser}
+
             </p>
-            <p className={styles.parag}>
-                <p>Правильный ответ:&nbsp;&nbsp;</p>
-                <p>
-                    <span
-                        className={styles.correctanswer}
-                    >
-                        {correctanswer}
-                    </span>
-                </p>
+            <p className={styles.correctanswer}>
+                Правильный ответ:&nbsp;&nbsp;   
+                {correctanswer}
             </p>
         </div>
     );

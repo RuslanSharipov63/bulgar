@@ -1,4 +1,5 @@
 import Result from "./Result";
+import { NavLink } from "react-router-dom";
 import { useAppSelector } from "../../hook";
 import questionType from "../../types/Types";
 import styles from './Result.module.css'
@@ -7,15 +8,23 @@ const ResultContainer = () => {
     const datatest = useAppSelector(state => state.questions.data)
 
     return (
-        <div className={styles.bigContainer}>
-            {datatest.map((question: questionType) => (
-                <Result
-                    key={question.id}
-                    {...question}
+        <>
+            <p>
+                <NavLink to="/" style={{textDecoration: "none", fontSize: "1.5vw", fontWeight: "500", color: "SteelBlue"}}>
+                    Вернуться на главную
+                </NavLink>
+            </p>
+            <div className={styles.bigContainer}>
 
-                />
-            ))}
-        </div>
+                {datatest.map((question: questionType) => (
+                    <Result
+                        key={question.id}
+                        {...question}
+
+                    />
+                ))}
+            </div>
+        </>
 
     )
 }

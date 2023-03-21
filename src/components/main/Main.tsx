@@ -30,10 +30,15 @@ const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, 
 
     return (
         <div className={`${styles.container} ${leaveForLater ? styles.active : null}`} >
-            <p className={styles.question}>{id}. {question}</p>
+            <p className={styles.question}>
+                {id}. {question}
+            </p>
             <div className={styles.wrapper}>
-                <p className={styles.answer}>{answer1}</p>
-                <input type="radio"
+                <p className={styles.answer}>
+                    {answer1}
+                </p>
+                <input className={styles.inp}
+                    type="radio"
                     name={answer1}
                     value="1"
                     checked={value == '1' ? true : false}
@@ -43,7 +48,9 @@ const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, 
             </div>
             <div className={styles.wrapper}>
                 <p className={styles.answer}>{answer2}</p>
-                <input type="radio"
+                <input
+                    className={styles.inp}
+                    type="radio"
                     name={answer2}
                     value="2"
                     checked={value == '2' ? true : false}
@@ -52,7 +59,9 @@ const Main: React.FC<typeForMain> = ({ id, question, answer1, answer2, answer3, 
             </div>
             <div className={styles.wrapper}>
                 <p className={styles.answer}>{answer3}</p>
-                <input type="radio"
+                <input
+                    className={styles.inp}
+                    type="radio"
                     name={answer3}
                     value="3"
                     checked={value == '3' ? true : false}
