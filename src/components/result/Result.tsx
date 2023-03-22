@@ -2,6 +2,7 @@ import questionType from "../../types/Types";
 import styles from './Result.module.css';
 
 const Result: React.FC<questionType> = ({ id, question, answeruser, correctanswer }) => {
+
     return (
         <div className={styles.container}>
             <p className={styles.paragQuestion}>
@@ -12,7 +13,7 @@ const Result: React.FC<questionType> = ({ id, question, answeruser, correctanswe
 
             </p>
             <p className={styles.correctanswer}>
-                Правильный ответ:&nbsp;&nbsp;   
+                Правильный ответ:&nbsp;&nbsp;
                 {correctanswer}
             </p>
         </div>

@@ -10,7 +10,16 @@ const ResultContainer = () => {
     return (
         <>
             <p>
-                <NavLink to="/" style={{textDecoration: "none", fontSize: "1.5vw", fontWeight: "500", color: "SteelBlue"}}>
+                <NavLink
+                    to="/"
+                    className={styles.linkTitle}
+                    style={{
+                        textDecoration: "none",
+                        fontSize: "1.5vw",
+                        fontWeight: "500",
+                        color: "SteelBlue"
+                    }}
+                >
                     Вернуться на главную
                 </NavLink>
             </p>
