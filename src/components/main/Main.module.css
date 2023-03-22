@@ -114,6 +114,10 @@
         margin-left: 35vw;
         margin-right: 35vw;
     }
+
+    .parag {
+        font-size: 2vw;
+    }
 }
 
 
@@ -127,6 +131,7 @@
 
     .container {
         max-width: 30vw;
+        height: 75vh;
     }
 
     .wrapper {
@@ -136,10 +141,15 @@
 
     .question {
         font-size: 2.2vw;
+        height: 20vh;
     }
 
     .answer {
         font-size: 2.5vw;
+    }
+
+    .parag {
+        font-size: 2.3vw;
     }
 }
 
@@ -150,23 +160,46 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        
+
     }
 
     .container {
-       min-width: 90vw;  
+        min-width: 90vw;
+        height: auto;
+        justify-content: space-around;
+        align-content: left;
     }
 
     .wrapper {
         width: 90vw;
         justify-content: space-between;
     }
+
     .question {
         font-size: 5vw;
     }
 
     .answer {
         font-size: 5vw;
+        height: 23vh;
+    }
+    .parag {
+        font-size: 3vw;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 300px) { 
+    .question {
+        font-size: 6.5vw;
+    }
+    .answer {
         height: 17vh;
     }
+
+    .parag {
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
 }
